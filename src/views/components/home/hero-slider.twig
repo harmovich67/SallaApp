@@ -1,0 +1,10 @@
+<section class="hero">
+  <salla-slider>
+    {% for slide in component.images %}
+      <div class="slide">
+        <img src="{{ slide.image }}">
+        <div class="caption">{{ slide.caption | raw }}</div>
+      </div>
+    {% endfor %}
+  </salla-slider>
+</section>

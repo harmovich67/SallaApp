@@ -1,0 +1,7 @@
+<section class="featured container py-10">
+  <h2 class="text-xl font-bold mb-4">منتجات مميزة</h2>
+  {% if component.products %}
+    {% for product in component.products %}
+      {% include 'components.product.card' %}
+  {% endif %}
+</section>

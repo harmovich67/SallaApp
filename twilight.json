@@ -1,0 +1,86 @@
+{
+  "name": {
+    "ar": "ثيم تجريبي — نجمة",
+    "en": "Najma Demo Theme"
+  },
+  "repository": "https://example.com/najma-demo",
+  "author_email": "dev@example.com",
+  "support_url": "https://example.com/support",
+  "description": "ثيم تجريبي صغير لتجربة أدوات سَلَّة برو (الفحص، الإصلاح، المكتبة، النسخ، الإصدارات).",
+  "features": [
+    "mega-menu",
+    "color",
+    "breadcrumb",
+    "component-featured-products"
+  ],
+  "settings": [
+    {
+      "id": "header_is_sticky",
+      "type": "boolean",
+      "format": "switch",
+      "label": "تثبيت الهيدر",
+      "value": true
+    },
+    {
+      "id": "footer_is_dark",
+      "type": "boolean",
+      "format": "switch",
+      "label": "فوتر داكن",
+      "value": false
+    }
+  ],
+  "components": [
+    {
+      "key": "demo-hero",
+      "title": {
+        "ar": "سلايدر رئيسي",
+        "en": "Hero slider"
+      },
+      "path": "home.hero-slider",
+      "icon": "sicon-image-carousel",
+      "fields": [
+        {
+          "id": "images",
+          "type": "items",
+          "format": "variable-list",
+          "label": "الصور"
+        }
+      ]
+    },
+    {
+      "key": "demo-featured",
+      "title": {
+        "ar": "منتجات مميزة",
+        "en": "Featured products"
+      },
+      "path": "home.featured-products",
+      "icon": "sicon-star",
+      "fields": [
+        {
+          "id": "products",
+          "type": "items",
+          "format": "dropdown-list",
+          "label": "المنتجات",
+          "source": "products"
+        }
+      ]
+    },
+    {
+      "key": "demo-testimonials",
+      "title": {
+        "ar": "آراء العملاء",
+        "en": "Testimonials"
+      },
+      "path": "home.testimonials",
+      "icon": "sicon-comment",
+      "fields": [
+        {
+          "id": "title",
+          "type": "string",
+          "format": "text",
+          "label": "العنوان"
+        }
+      ]
+    }
+  ]
+}

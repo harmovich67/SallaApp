@@ -1,0 +1,13 @@
+{
+  "name": "najma-demo-theme",
+  "version": "1.0.0",
+  "description": "Demo Salla Twilight theme",
+  "scripts": {
+    "production": "echo build",
+    "watch": "echo watch"
+  },
+  "devDependencies": {
+    "@salla.sa/twilight": "^2.0.0",
+    "@salla.sa/twilight-components": "^2.0.0"
+  }
+}

@@ -1,0 +1,25 @@
+{# Layout رئيسي — ثيم نجمة التجريبي #}
+<!DOCTYPE html>
+<html lang="{{ current_locale }}" dir="{{ theme.is_rtl ? 'rtl' : 'ltr' }}">
+<head>
+  {% hook 'head:start' %}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }}</title>
+  {% hook 'head' %}
+  <link rel="stylesheet" href="{{ 'app.css' | asset }}">
+  {% hook 'head:end' %}
+</head>
+<body class="bg-white text-gray-900">
+  {% hook 'body:start' %}
+  {% include 'components.promo-bar' %}
+  {% include 'components.header.header' %}
+
+  <main class="min-h-screen">
+    {% block content %}{% endblock %}
+  </main>
+
+  {% include 'components.footer.footer' %}
+  <script src="{{ 'app.js' | asset }}"></script>
+</body>
+</html>

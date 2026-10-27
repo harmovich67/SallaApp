@@ -1,0 +1,11 @@
+<header class="header sticky top-0 bg-white shadow-sm z-20">
+  <div class="container flex items-center justify-between py-3">
+    <a href="{{ store.url }}"><img src="{{ store.logo }}" alt="{{ store.name }}" class="h-10"></a>
+    <nav class="flex gap-6">
+      <a href="{{ store.url }}">الرئيسية</a>
+      <a href="{{ store.url }}/products">المنتجات</a>
+      <a href="{{ store.url }}/contact">اتصل بنا</a>
+    </nav>
+    <salla-cart-summary></salla-cart-summary>
+  </div>
+</header>

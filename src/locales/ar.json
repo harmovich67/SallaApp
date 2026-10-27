@@ -1,0 +1,15 @@
+{
+  "common": {
+    "footer": {
+      "copyright": "جميع الحقوق محفوظة"
+    },
+    "add_to_cart": "أضف للسلة"
+  },
+  "pages": {
+    "cart": {
+      "title": "سلة المشتريات"
+    },
+    "thank_you": "شكرًا لطلبك",
+    "profile": "حسابي"
+  }
+}

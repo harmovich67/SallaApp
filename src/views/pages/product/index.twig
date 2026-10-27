@@ -1,0 +1,12 @@
+{% extends 'layouts.master' %}
+
+{% block content %}
+  <section class="container py-8">
+    <h1>{{ category.name }}</h1>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {% for product in products %}
+        {% include 'components.product.card' %}
+      {% endfor %}
+    </div>
+  </section>
+{% endblock %}
